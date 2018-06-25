@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>My Portfolio</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- reset broswer default styles -->
+	<link href="stylesheets/reset.css" rel="stylesheet">
+	<!-- phone-default -->
+	<link href="stylesheets/phone-default.css" rel="stylesheet">
+	<!-- enhance-tablet -->
+	<link href="stylesheets/tablet.css" rel="stylesheet">
+	<!-- enhance-desktop -->
+	<link href="stylesheets/desktop.css" rel="stylesheet">
+
+
+	<!-- LOAD THE LATEST VERSION OF JQUERY-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+	<!-- LOAD TWO SCRIPTS NEEDED FOR RESPONSIVE IMAGES -->
+	<script>
+		// Picture element HTML shim|v it for old IE (pairs with Picturefill.js)
+		document.createElement( "picture" );
+	</script>
+	<script async="true" src="js/picturefill.js"></script>
+
+	
+	
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]--> 
+
+</head>
+
+<body>
+	<div id="colorBar"></div>
+
+	<div id="navWrapper">
+		<nav class="nav">
+			<ul class="clearfix">
+				<li class="hello"><a href="index.html">Hello</a></li>
+				<li class="works"><a href="#works">Works</a></li>
+				<li class="about"><a href="about.html">About Me</a></li>
+				<li class="contact"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	
+	<section id="heroImage">
+		<div id="heroText">
+			<h1>I am Jose Tong</h1>
+			<p>And I'm a Web Developer</p>
+		</div>
+	</section>
+	
+
+	<section id="projects">
+		<div class="row">
+			<div>		
+				<h1 id="projectTitle">Current Projects</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<p>Budget Tracker</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<p>Chest Tracker</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<p>React Project</p>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="footer">
+		<footer>Copyright &copy 2018 Jose Tong</footer>
+	</section>
+
+</body>
+</html>

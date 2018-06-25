@@ -1,0 +1,115 @@
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {
+	-webkit-text-size-adjust: none;
+}
+
+body, html {
+	height: 100%;
+}
+
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+	/*-----BODY -----*/
+body {
+	background-color: #E6E1D8;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:300;	/*also loaded 600 for bold*/
+	color: #494948;
+}
+
+/*-----COLOR BAR -----*/
+#colorBar {
+	height: 3px;
+	width: 100%;
+	background-color: #e22121;
+}
+
+/*-----NAVIGATION -----*/	
+#navWrapper {
+	background-color: #e22121;	
+}
+nav ul li {
+	float: left;
+	width: 25%;	
+}
+
+nav ul li a {
+	display: block;
+	font-size: .9em;
+	font-weight:600;
+	color: #fff;
+	text-decoration:none;
+	margin: .2em 0;
+	padding: .4em;
+	border-right: 3px solid rgba(255,255,255,0.3);
+	text-align: center;
+	transition: color .5s;
+}	
+
+/*this turns off the last border*/
+nav ul li:last-child a {
+	border-right: none;
+}
+
+nav ul li a:hover {
+	color: blue;
+	
+}
+
+/*-----HERO IMAGE -----*/
+#heroImage {
+	background-image: url(../images/hero_img2.jpg);
+
+	height: 55%;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: white;
+	position: relative;
+}
+
+#heroText {
+	font-size: 2em;
+	text-align: center;
+	position: absolute;
+	bottom: 12%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+
+/*----- LAYOUT -----*/
+
+.column {
+	width: 100%;
+	padding: .5em 2%;
+	float: left;
+}
+
+#projectTitle {
+	text-align: center;
+	background-color: grey;
+}
+
+p {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+}
+
+
+/*----- OTHER -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
