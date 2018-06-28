@@ -12,7 +12,7 @@ body, html {
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
-	/*-----BODY -----*/
+/*-----BODY -----*/
 body {
 	background-color: #E6E1D8;
 	font-size: 16px;
@@ -32,6 +32,7 @@ body {
 #navWrapper {
 	background-color: #e22121;	
 }
+
 nav ul li {
 	float: left;
 	width: 25%;	
@@ -50,7 +51,7 @@ nav ul li a {
 	transition: color .5s;
 }	
 
-/*this turns off the last border*/
+/* turn off the last border */
 nav ul li:last-child a {
 	border-right: none;
 }
@@ -63,9 +64,7 @@ nav ul li a:hover {
 /*-----HERO IMAGE -----*/
 #heroImage {
 	background-image: url(../images/hero_img2.jpg);
-
 	height: 55%;
-
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -84,32 +83,37 @@ nav ul li a:hover {
 }
 
 
-/*----- LAYOUT -----*/
+/*----- PROJECTS -----*/
 
-.column {
-	width: 100%;
-	padding: .5em 2%;
+.projectHeader {
+	color: #fff;
+	text-align: center;
+	background-color: #e22121;
+}
+
+.col {
 	float: left;
+	width: 100%;
+	padding: 10px;
+	border: solid;
+	background-color: #222222;
 }
 
-#projectTitle {
-	text-align: center;
-	background-color: grey;
+.col img {
+  margin-top: 8px;
+  width: 100%;
+  min-height: 270px;
 }
 
-p {
-	text-align: center;
-}
+
+/* ---- FOOTER ---- */
 
 footer {
 	text-align: center;
 }
 
-
-/*----- OTHER -----*/
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
-

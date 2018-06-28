@@ -28,9 +28,6 @@
 	</script>
 	<script async="true" src="js/picturefill.js"></script>
 
-	
-	
-
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -41,18 +38,21 @@
 <body>
 	<div id="colorBar"></div>
 
+
+	<!-- Navigation bar -->
 	<div id="navWrapper">
 		<nav class="nav">
 			<ul class="clearfix">
 				<li class="hello"><a href="index.html">Hello</a></li>
-				<li class="works"><a href="#works">Works</a></li>
+				<li class="projects"><a href="#projects">Works</a></li>
 				<li class="about"><a href="about.html">About Me</a></li>
 				<li class="contact"><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
 	</div>
 
-	
+
+	<!-- Hero image and title -->
 	<section id="heroImage">
 		<div id="heroText">
 			<h1>I am Jose Tong</h1>
@@ -61,33 +61,28 @@
 	</section>
 	
 
+	<!-- Projects -->
 	<section id="projects">
-		<div class="row">
-			<div>		
-				<h1 id="projectTitle">Current Projects</h1>
-			</div>
+		<div class="projectHeader">
+			<h1>Current Projects</h1>
 		</div>
 
-		<div class="row">
-			<div class="column">
-				<p>Budget Tracker</p>
-				<a href="http://18.218.116.239/budget/">Link</a>
+		<div class="row clearfix">
+			<div class="col">
+				<a href="http://18.218.116.239/budget/" target="_blank"><img src="images/budget_tracker.png"></a>
 			</div>
-		</div>
-
-		<div class="row">
-			<div class="column">
-				<p>Chest Tracker</p>
+		
+			<div class="col">
+				<a href="http://18.218.116.239:3000/" target="_blank"><img src="images/chest.png"></a>
 			</div>
-		</div>
-
-		<div class="row">
-			<div class="column">
-				<p>React Project</p>
+		
+			<div class="col">
+				<a href="http://18.218.116.239/budget/" target="_blank"><img src="images/budget_tracker.png"></a>
 			</div>
-		</div>
+		</div><!-- end of row -->
 
 	</section>
+
 
 	<section id="footer">
 		<footer>Copyright &copy 2018 Jose Tong</footer>
