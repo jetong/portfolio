@@ -82,6 +82,13 @@ nav ul li a:hover {
 	color: white;
 }
 
+#heroFooter {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: .5em;
+	color: #255067;
+}
 
 /*----- PROJECTS -----*/
 
@@ -95,20 +102,28 @@ nav ul li a:hover {
 	float: left;
 	width: 100%;
 	padding: 10px;
-	border: solid;
+	border-right: solid;
+	border-top: none;
 	background-color: #222222;
+	text-align: center;
+	color: silver;
+}
+
+.col:last-child {
+	border-right: none;
 }
 
 .col img {
   margin-top: 8px;
   width: 100%;
-  min-height: 270px;
+  min-height: 300px;
+	max-height: 300px;
 }
 
 
 /* ---- FOOTER ---- */
 
-footer {
+#footer {
 	text-align: center;
 }
 
