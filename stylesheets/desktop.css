@@ -83,14 +83,34 @@ nav ul li:first-child a {
 
 
 /*----- PROJECTS SECTION -----*/
+#projects {
+        height: 100%;
+}
+
+.projectHeader {
+        padding: .3em 0 .3em 0;
+}
+
 .col3 {
     float: left;
     width: 33.33%;
     padding: 10px;
+    border-bottom: none;
 }
 
 
 /*----- CONTACTS SECTION -----*/
+#contact {
+        height: 100%;
+        border-top: solid #d44626;
+        padding-top: 5em;
+}
+
+.contact-title {
+        font-size: 4em;
+        color: #d44636;
+}
+
 .col2 {
     float: left;
     width: 50%;
