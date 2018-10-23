@@ -12,7 +12,7 @@ body, html {
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
-/*-----BODY -----*/
+/*----- BODY -----*/
 body {
 	background-color: #E6E1D8;
 	font-size: 16px;
@@ -21,7 +21,8 @@ body {
 	color: #494948;
 }
 
-/*-----NAVIGATION -----*/	
+
+/*----- NAVIGATION SECTION -----*/	
 #navWrapper {
 	background-color: #d44626;
 	height: 2em;
@@ -45,6 +46,7 @@ nav ul li a {
 	transition: color .5s;
 }	
 
+
 /* turn off the last border */
 nav ul li:last-child a {
 	border-right: none;
@@ -55,7 +57,8 @@ nav ul li a:hover {
 	
 }
 
-/*-----HERO IMAGE -----*/
+
+/*----- HERO SECTION -----*/
 #heroImage {
 	background-image: url(../images/ggb-Free-Photos-small.jpg);
 	height: 100%;
@@ -87,8 +90,7 @@ nav ul li a:hover {
 }
 
 
-
-/*----- ABOUT -----*/
+/*----- ABOUT SECTION -----*/
 #about {
 	background-color: #fefefe;
 	height: 140%;
@@ -114,7 +116,7 @@ nav ul li a:hover {
 	float: left;
 }
 
-#about-text {
+#about-info {
 	background-color: #333333;
 	padding: .5em;
 	color: #d44626;
@@ -123,7 +125,7 @@ nav ul li a:hover {
 	float: left;
 }
 
-p {
+.about-text {
 	text-indent: 2em;
 	letter-spacing: .15em;
 	margin-bottom: 1em;
@@ -209,10 +211,7 @@ h4 {
 	float: left;
 	width: 100%;
 	padding: 10px;
-	border-left: solid;
-	border-top: none;
 	text-align: center;
-	color: silver;
 }
 
 .col2:first-child {
