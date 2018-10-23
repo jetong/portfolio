@@ -6,7 +6,7 @@
 	<title>My Portfolio</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+	
 	<!-- reset browser defaults -->
 	<link href="stylesheets/reset.css" rel="stylesheet">
 	<!-- phone-default -->
@@ -26,7 +26,7 @@
 		// Picture element HTML shim|v it for old IE (pairs with Picturefill.js)
 		document.createElement( "picture" );
 	</script>
-	<script async="true" src="js/picturefill.js"></script>
+	<script async="true" src="picturefill.js"></script>
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -36,17 +36,13 @@
 </head>
 
 <body>
-	<div id="colorBar"></div>
-
-
 	<!-- Navigation bar -->
 	<div id="navWrapper">
 		<nav class="nav">
 			<ul class="clearfix">
-				<li class="hello"><a href="index.html">Hello</a></li>
+				<li class="about"><a href="#about">About Me</a></li>
 				<li class="projects"><a href="#projects">Works</a></li>
-				<li class="about"><a href="about.html">About Me</a></li>
-				<li class="contact"><a href="contact.html">Contact</a></li>
+				<li class="contact"><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -54,18 +50,47 @@
 
 	<!-- Hero image and title -->
 	<section id="heroImage">
-		<title>Merligen, Switzerland</title>
+		<title>Golden Gate Bridge</title>
+
+		<div id="welcome-wrapper">
+			<h2 id="welcome">Welco</h2>
+		</div>
 
 		<div id="heroText">
-			<h1>I am Jose Tong</h1>
-			<p>And I'm a Web Developer</p>
+			<h1>Hi, I'm Jose</h1>
 		</div>
 
 		<footer id="heroFooter">
-			<small>Image: Pixabay/Lukas Bieri</small>
+			<small>Image: Pixabay/Free-Photos</small>
 		</footer>
 	</section>
+
+
+	<section id="about">
+		<div id="spacer">
+		</div>
+
+		<div id="me">
+			<h2>me</h2>
+		</div>
+
+		<div id="about-profile">
+
+			<div id="about-photo">
+			</div>
 	
+			<div id="about-text">
+				<p>
+				I'm a creative Web Developer based in the beautiful SF Bay Area.  Programming and web designing come together in a very unique way.  They empower us with endless creative and practical possibilities.  I like challenging myself with solutions that show beauty and simplicity without sacrificing functionality.  Moreover Web Dev connects us to one anotehr.  I also love the feeling that comes with helping and enabling others achieve their goals and look forward to creating amazing websites for people with amazing dreams.  I value functionality and am a firm believer in beauty through simplicity.
+				</p>
+				<p>
+				In my spare time I enjoy local hikes along the peninsula.  On weekends you can find me with my volunteer group
+				<a href="http://encores-on-wheels.blogspot.com/" target="_blank">(Encores on Wheels)</a>
+				jamming out music at various senior homes.
+				</p>
+			</div>
+		</div>
+	</section>
 
 	<!-- Projects -->
 	<section id="projects">
@@ -74,31 +99,48 @@
 		</div>
 
 		<div class="row clearfix">
-			<div class="col">
+			<div class="col3">
 				<h3>Budget Tracker v1</h3>
-				<a href="http://18.218.116.239/budget/" target="_blank"><img src="images/budget_tracker.png"></a>
-				<p>HTML5, CSS3, Flexbox, sessionStorage</p>
+				<a href="http://josetong.com/budget/" target="_blank"><img src="images/budget_tracker.jpg"></a>
+				<p>HTML5, CSS3, Flexbox, Canvas drawing, sessionStorage</p>
 			</div>
 		
-			<div class="col">
+			<div class="col3">
 				<h3>Budget Tracker v2</h3>
-				<a href="http://18.218.116.239:3001/public/index.html" target="_blank"><img src="images/budget_tracker2.png"></a>
+				<a href="http://104.248.73.138:3001/public/" target="_blank"><img src="images/budget_tracker2.jpg"></a>
 				<p>HTML5, CSS3, Node, Express, MongoDB, Ajax, Mongoose, Bootstrap, JQuery</p>
 			</div>
 		
-			<div class="col">
+			<div class="col3">
 				<h3>Chest Tracker</h3>
-				<a href="http://18.218.116.239:3000/" target="_blank"><img src="images/chest.jpg"></a>
+				<a href="http://104.248.73.138:3000/public/" target="_blank"><img src="images/chest.jpg"></a>
 				<p>HTML5, CSS3, JQuery, Form Validation, CSS Grid, Node.js, EJS, Riot API, MongoDB, Mongoose</p>
 			</div>
 		</div><!-- end of row -->
 
 	</section>
 
+	<section id="contact">
+		<h3 class="contact-title"><span class="white-text">Let's build something</span></h3>
+		<h3 class="contact-title">AMAZING <span class="white-text">together.</span></h3>
 
-	<section id="footer">
-		<footer>Copyright &copy 2018 Jose Tong</footer>
+		<div id="contact-info" class="clearfix">
+			<div class="col2">
+				<h4>Get in touch</h4>
+				<div id="email"></div>
+			</div>
+
+			<div class="col2">
+				<h4>Connect</h4>
+				<div id="connect"></div>
+			</div>
+		</div>
 	</section>
 
+	<section id="footer">
+		<footer>Copyright &copy 2018 josetong.com</footer>
+	</section>
+
+	<script src="script.js"></script>
 </body>
 </html>
