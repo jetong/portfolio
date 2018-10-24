@@ -130,6 +130,10 @@ nav ul li a:hover {
 	margin-bottom: 1em;
 }
 
+#eow-link:link, #eow-link:visited {
+	color: #d44626;
+}
+
 
 /*----- PROJECTS -----*/
 
@@ -175,7 +179,7 @@ nav ul li a:hover {
 
 #contact {
 	text-align: center;
-	height: 120%;
+	height: 100%;
 	background: #333333;
 	border-top: solid #d44626;
 	padding-top: 3em;

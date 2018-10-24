@@ -6,6 +6,11 @@
     padding: 10px;
 }
 
+/*----- HERO SECTION -----*/
+#heroImage {
+        min-height: 600px;
+}
+
 #welcome-wrapper {
         width: 100%;
         height: 100%;
@@ -21,12 +26,15 @@
         font-size: 13em;
 }
 
-
+/*----- ABOUT SECTION -----*/
 #about {
-        background-color: #fefefe;
         height: 125%;
         position: relative;
-        width: 100%;
+}
+
+#about-profile {
+	height: 68%;
+	padding: 0 2em 0 2em;
 }
 
 #spacer {
@@ -45,5 +53,19 @@
         display: inline;
 }
 
+/*----- PROJECTS SECTION -----*/
+#projects {
+	height: 170%;
+}
+
+#projectHeader {
+	padding-top: 7px;
+}
+
+
+/*----- CONTACTS SECTION -----*/
+#contact {
+	height: 96%;
+}
 
 }
