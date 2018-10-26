@@ -66,10 +66,33 @@
 /*----- CONTACTS SECTION -----*/
 #contact {
 	height: 96%;
+	padding-top: 8em;
+}
+
+.contact-title {
+        font-size: 3em;
 }
 
 #contact-info {
 	margin-top: 6em;
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+.col2 {
+    width: 50%;
+    border-left: solid;
+}
+
+h4 {
+        font-size: 1.5em;
+        color: #fefefe;
+        padding: 1em;
 }
 
 }
+
+
+
+
+

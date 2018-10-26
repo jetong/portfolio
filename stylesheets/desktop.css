@@ -106,25 +106,15 @@ nav ul li:first-child a {
 /*----- CONTACTS SECTION -----*/
 #contact {
         height: 96%;
-        border-top: solid #d44626;
-        padding-top: 5em;
 }
 
 .contact-title {
         font-size: 4em;
-        color: #d44636;
 }
 
 #contact-info {
 	margin-left: 6em;
 	margin-right: 6em;
-}
-
-.col2 {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    border-left: solid;
 }
 
 
