@@ -117,21 +117,20 @@ nav ul li a:hover {
 }
 
 #about-info {
-	background-color: #333333;
 	padding: .5em;
-	color: #d44626;
 	font-size: 1em;
 	margin-top: 1em;
 	float: left;
 }
 
 .about-text {
+	color: white;
 	text-indent: 2em;
 	margin-bottom: 1em;
 }
 
 #eow-link:link, #eow-link:visited {
-	color: #d44626;
+	color: white;
 }
 
 
