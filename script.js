@@ -14,19 +14,19 @@ $(function() {
 });
 
 
-let email = document.getElementById("email");
-let email_ul = document.createElement("ul");
-let email_li = document.createElement("li");
+var email = document.getElementById("email");
+var email_ul = document.createElement("ul");
+var email_li = document.createElement("li");
 email.appendChild(email_ul);
 email_ul.appendChild(email_li);
 email_li.className += "list-item";
 email_li.innerHTML = "jose.e.tong@gmail.com";
 
-let connect = document.getElementById("connect");
-let connect_ul = document.createElement("ul");
-let connect_li1 = document.createElement("li");
-let connect_li2 = document.createElement("li");
-let connect_li3 = document.createElement("li");
+var connect = document.getElementById("connect");
+var connect_ul = document.createElement("ul");
+var connect_li1 = document.createElement("li");
+var connect_li2 = document.createElement("li");
+var connect_li3 = document.createElement("li");
 connect.appendChild(connect_ul);
 connect_ul.appendChild(connect_li1);
 connect_ul.appendChild(connect_li2);
