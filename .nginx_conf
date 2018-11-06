@@ -1,0 +1,48 @@
+# This is the nginx config file located at /etc/nginx/sites-enabled/josetong.com
+# It sets up a reverse proxy so that the node projects budget2 and chest_tracker
+# (each running on separate node server ports) can be accessed via urls with 
+# josetong.com as root.
+
+
+server {
+	listen 80;
+	listen [::]:80;
+
+	root /var/www/html/portfolio;
+	index index.html;
+
+	server_name josetong.com www.josetong.com;
+
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+
+	location /budget2/ {
+		proxy_pass http://josetong.com:3001/public/;
+	        proxy_http_version 1.1;
+	        proxy_set_header Upgrade $http_upgrade;
+	        proxy_set_header Connection 'upgrade';
+	        proxy_set_header Host $host;
+	        proxy_cache_bypass $http_upgrade;
+	}
+
+	location /update/ {
+		proxy_pass http://josetong.com:3001/update/;
+	        proxy_http_version 1.1;
+	        proxy_set_header Upgrade $http_upgrade;
+	        proxy_set_header Connection 'upgrade';
+	        proxy_set_header Host $host;
+	        proxy_cache_bypass $http_upgrade;
+	}
+
+	location /chest_tracker/ {
+	        proxy_pass http://josetong.com:3000/public/;
+	        proxy_http_version 1.1;
+	        proxy_set_header Upgrade $http_upgrade;
+	        proxy_set_header Connection 'upgrade';
+	        proxy_set_header Host $host;
+	        proxy_cache_bypass $http_upgrade;
+	}
+
+}

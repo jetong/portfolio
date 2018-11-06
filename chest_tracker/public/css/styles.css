@@ -1,0 +1,89 @@
+body {
+  background-image:url('../img/akali_vs_baron.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:#ffe500;
+  background-color:black;
+  font-size:12pt;
+  font-family:QuadratSerial;
+}
+
+a:visited {
+  color:grey;
+}
+
+#frame {
+  border: 30px solid;
+  border-image:url('../img/frame.png') 36 32 20 32 round;
+  /*border-image-source: url(frame.png);
+  border-image-slice:36 32 21 32;
+  border-image-repeat:round;
+  */
+  margin: 0 auto;
+  margin-top:22%;
+  width: 380px;
+}
+
+#login {
+  padding: 25px 18px 18px 26px;
+  opacity:.85;
+  background-color:black;
+}
+
+#name-text {
+  padding-right:10px;
+}
+
+#available-chests-text {
+  padding-right:12px;
+}
+
+input[type=text] {
+  height:17px;
+  font-size:11pt;
+  text-align:center;
+}
+
+#name-input {
+  width:166px;
+  text-align:left;
+  padding-left:5px;
+}
+
+.number-input {
+  width:22px;
+}
+
+.button {
+  width:90px;
+  font-size:18px;
+  font-family:QuadratSerial;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top:5px;
+}
+
+#left-grid {
+  padding-top:13px;  /* adjust vertical alignment of text "Next Available Chest" */
+}
+
+tr {
+  text-align:center;
+}
+
+td {
+  padding-left:18px;	/* padding between days, hours, minutes */
+}
+
+#errorMessages {
+  text-align:center;
+  margin: auto;
+}
+
+/* error messages */
+.errorText {
+  /*color: red;*/
+}

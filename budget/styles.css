@@ -1,0 +1,188 @@
+body {
+  background-color: #f5f3f1;
+  font-family: "Century Gothic", Arial;
+  padding: 1em 0 1em 0;
+  color: #117465;
+}
+
+h1 {
+  padding-bottom: .25em;
+  font-size: 2em;
+  text-decoration: underline double;
+  font-weight: 300;
+  font-style: italic;
+}
+
+h2 {
+  font-weight: 100;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+h3 {
+  font-weight: 100;
+  font-style: italic;
+  text-align: left;
+  border-bottom: solid thin #117465;
+  padding-bottom: 5px;
+  width: 8em;
+}
+
+
+/* Structure the page as a row with left and right flexbox elements */
+#row {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 1em 0 1em 0;
+  border: 1px solid #117465;
+}
+
+#left {
+  padding: .5em 0 .5em 0;
+  width: 40%;
+  min-width: 600px;
+  text-align: center;
+  border-right: 1px solid #117465;
+}
+
+#right {
+  padding: .5em 0 0 0;
+  width: 60%;
+  max-width: 40em;
+  text-align: center;
+}
+
+/* --- MOBILE --- */
+@media only screen and (max-width: 600px) {
+#row {
+  flex-wrap: wrap;
+}
+
+#left {
+  width: 100%;
+}
+
+#right {
+	width: 100%;
+}
+
+}
+
+/* Left flexbox (Form + buttons) */
+main {
+  width: 22em;
+  margin: auto;
+}
+
+fieldset {
+  padding: 10px;
+  border: 1px solid;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+legend {
+  font-weight: 900;
+  font-style: italic;
+  border: 2px solid;
+  padding: 0 5px 0 5px;
+  background-color: #dddddd;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 1em;
+  font-style: normal;
+  text-align: right;
+  width: 8em;
+}
+
+input {
+  float: right;
+  margin-right: 3em;
+  width: 100px;
+  text-align: right;
+}
+
+#btn-submit {
+  margin-top: .25em;
+  height: 2em;
+}
+
+#btn-start-over {
+  margin-top: .25em;
+  height: 2em;
+}
+
+
+/* Right flexbox (canvas-balance-wrapper + buffer space + key-wrapper) */
+#right-row {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 26em;
+}
+
+#canvas-balance-wrapper {
+  width: 65%;
+  min-width: 20em;
+  max-width: 27em;
+}
+
+#canvas-wrapper {
+  height: 23em;
+}
+
+#buffer-space {
+  width: 10%;
+  min-width: 0em;
+  max-width: 3em;
+}
+
+#balance-panel {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 2em;
+  border-top: solid thin #117465;
+  padding-top: .25em;
+}
+
+#left-panel {
+  width: 15%;
+}
+
+#right-panel {
+  width: 15%;
+}
+
+#mid-panel {
+  width: 70%;
+  text-align: center;
+}
+
+#balance-label {
+  font-weight: 100;
+  font-style: italic;
+  font-size: 20px;
+  width: 4em;
+}
+
+#balance {
+  margin-top: .2em;
+  margin-right: 1em;
+  height: 1.25em;
+  text-align: center;
+}
+
+#key-wrapper {
+  width:25%;
+  min-width: 10em;
+  max-width: 12em;
+  padding-left: 0em;
+  margin-top: 2em;
+}
