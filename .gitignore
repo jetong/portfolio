@@ -1,4 +1,6 @@
-budget2/node_modules/
-chest_tracker/node_modules/
+budget2/
+chest_tracker/
 chest_tracker/private/
+ruby/
+static/
 notes
