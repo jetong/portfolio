@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/jetong/budget#readme",
   "devDependencies": {
-    "rewire": "^4.0.1",
+    "rewire": "^6.0.0",
     "tape": "^4.9.0"
   }
 }
